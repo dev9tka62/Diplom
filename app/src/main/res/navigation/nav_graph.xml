@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    android:label="@string/calculator_calories"
+    app:startDestination="@id/calculateFragment">
+
+    <fragment
+        android:id="@+id/calculateFragment"
+        android:name="com.example.ration.calculate.fragment.CalculateFragment"
+        android:label="@string/calculator_calories"/>
+
+    <dialog
+        android:id="@+id/choseProductFromDBDialogFragment"
+        android:name="com.example.ration.calculate.fragment.ChoseProductFromDBDialogFragment"
+        android:label="ChoseProductFromDBDialogFragment" />
+
+    <fragment
+        android:id="@+id/addProductToDBFragment"
+        android:name="com.example.ration.calculate.fragment.AddProductToDBFragment"
+        android:label="@string/add_product_to_DB" />
+    <fragment
+        android:id="@+id/rationFragment"
+        android:name="com.example.ration.ration.fragment.RationFragment"
+        android:label="@string/your_ration">
+        <action
+            android:id="@+id/action_rationFragment_to_enterDataOfHumanFragment"
+            app:destination="@id/enterDataOfHumanFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/changeProductDialogFragment"
+        android:name="com.example.ration.ration.fragment.ChangeProductDialogFragment"
+        android:label="ChangeProductDialogFragment"/>
+    <fragment
+        android:id="@+id/fragmentDeleteProductFromDB"
+        android:name="com.example.ration.delete.DeleteProductFromDBFragment"
+        android:label="@string/delete_product_from_DB">
+        <action
+            android:id="@+id/action_fragmentDeleteProductFromDB_to_chooseDialog"
+            app:destination="@id/chooseDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/chooseDialog"
+        android:name="com.example.ration.delete.ChooseDialog"
+        android:label="ChooseDialog">
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </dialog>
+    <fragment
+        android:id="@+id/enterDataOfHumanFragment"
+        android:name="com.example.ration.ration.fragment.EnterDataOfHumanFragment"
+        android:label="@string/enter_data_of_human"/>
+</navigation>
