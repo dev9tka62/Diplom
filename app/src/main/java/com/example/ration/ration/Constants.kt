@@ -11,14 +11,14 @@ object Constants {
     const val CATEGORY_SALADS = "Salads"
     const val CATEGORY_SECOND = "Second"
 
-    // каэфициенты образов жизни в %
+    // коэффициенты образов жизни в %
     const val LOW_ACTIVITY = 100
     const val LIGHT_ACTIVITY = 110
     const val AVERAGE_ACTIVITY = 120
     const val HIGH_ACTIVITY = 130
     const val VERY_HIGH_ACTIVITY = 140
 
-    //коэфициенты целей в %
+    //коэффициенты целей в %
     const val WEIGHT_LOSE = 80
     const val WEIGHT_RETENTION = 100
     const val WEIGHT_UP = 120
@@ -27,13 +27,13 @@ object Constants {
     const val DRINKS_WEIGHT = 200
     const val SALAD_WEIGHT = 100
 
-    // соотношение завтрак к общему числу калрий в %
+    // соотношение завтрак к общему числу калорий в %
     const val BREAKFAST_PART = 25
 
-    // соотношение обеда к общему числу калрий в %
+    // соотношение обеда к общему числу калорий в %
     const val LUNCH_PART = 40
 
-    // соотношение ужина к общему числу калрий в %
+    // соотношение ужина к общему числу калорий в %
     const val DINNER_PART = 35
 
     const val NAME_SP = "sp"
